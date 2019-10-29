@@ -220,6 +220,27 @@ img {
   border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
+.footer .formSelection {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  display: none;
+}
+.footer form {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer form input[type="text"] {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  width: 40%;
+}
 .footer p {
   text-align: center;
   color: #212529;
