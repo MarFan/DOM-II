@@ -30,8 +30,6 @@ document.querySelector('form input[type="submit"]').addEventListener('click', el
     el.preventDefault();
 });
 
-let windowSize = window.innerWidth;
-
 document.querySelectorAll('nav a').forEach(el => {
     el.addEventListener('click', (e) => {
         e.preventDefault();
@@ -123,13 +121,17 @@ btnDrag.forEach(el => {
 });
 
 // resize event
+
+let windowSize = window.innerWidth;
+
 window.addEventListener('resize', () => {
+    clip.play();
     if(window.innerWidth < windowSize){
         console.log('Stop!  Your trying to squish me!');
-        windowsSize = window.innerWidth;
+        windowSize = window.innerWidth;
     }else if(window.innerWidth > windowSize){
         console.log('You\'re pulling me apart!');
-        windowsSize = window.innerWidth;
+        windowSize = window.innerWidth;
     }
 });
 
